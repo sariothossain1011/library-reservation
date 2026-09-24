@@ -1,4 +1,4 @@
-import React from 'react'
+import { FaFacebook , FaInstagramSquare ,FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -24,7 +24,7 @@ const Footer = () => {
                         <h4 className="font-bold">Contact</h4>
 
                         <p className="mt-3 text-slate-400">
-                            Email: library@Readora.com
+                            Email: library@readora.com
                         </p>
 
                         <p className="text-slate-400">
@@ -42,23 +42,24 @@ const Footer = () => {
                         <div className="mt-4 flex flex-wrap gap-3">
                             <a
                                 href="#"
-                                className="rounded-lg bg-slate-800 px-4 py-2 hover:bg-blue-600"
+                                  className="px-2 py-2"
                             >
-                                Facebook
+                            <FaFacebook size={28} className=" text-blue-600" />
                             </a>
 
                             <a
                                 href="#"
-                                className="rounded-lg bg-slate-800 px-4 py-2 hover:bg-blue-600"
+                                   className="px-2 py-2"
                             >
-                                Instagram
+                              <FaInstagramSquare size={28} className=" text-blue-600" />
                             </a>
 
                             <a
                                 href="#"
-                                className="rounded-lg bg-slate-800 px-4 py-2 hover:bg-blue-600"
+                           className="px-2 py-2"
                             >
-                                LinkedIn
+                             <FaLinkedin size={28} className=" text-blue-600" />
+
                             </a>
                         </div>
                     </div>

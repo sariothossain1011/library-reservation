@@ -22,7 +22,7 @@ const About = () => {
                         </p>
                     </div>
 
-                    <div className="grid gap-8 md:grid-cols-3">
+                    <div className="grid gap-8 lg:grid-cols-3 md:grid-cols-2">
 
                         {/* Card 1 */}
                         <div className="rounded-2xl bg-slate-50 p-8 shadow-sm">

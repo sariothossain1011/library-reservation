@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 interface Book {
@@ -8,19 +9,19 @@ interface Book {
 
 const books: Book[] = [
   {
-    icon: "📘",
+    icon: "/image_1.jpeg",
     title: "Clean Code",
     description:
       "Learn how to write simple, readable and maintainable software code.",
   },
   {
-    icon: "📗",
+      icon: "/image_2.jpeg",
     title: "The Pragmatic Programmer",
     description:
       "Improve your programming skills with practical software development techniques.",
   },
   {
-    icon: "📕",
+      icon: "/image_3.jpeg",
     title: "Computer Networks",
     description:
       "Understand networking concepts, protocols and modern communication systems.",
@@ -45,14 +46,21 @@ const ContentSection = () => {
             </h2>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-8 lg:grid-cols-3 md:grid-cols-2">
             {books.map((book: Book) => (
               <div
                 key={book.title}
                 className="overflow-hidden rounded-2xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-xl"
               >
                 <div className="flex h-48 items-center justify-center bg-blue-100 text-7xl">
-                  {book.icon}
+                  {/* {book.icon} */}
+                  <Image
+              src={book.icon}
+              alt={book.title}
+              width={150}
+              height={180}
+              className="h-full w-auto object-cover"
+            />
                 </div>
 
                 <div className="p-6">
